@@ -1,0 +1,30 @@
+<div class="navbar">
+        <ul class="menu_l">
+            <li ><a id="navbar_bold" href="/">Paw_Site</a></li>
+            <li><a href="/about">Hakkımızda</a></li>
+            <li>
+                <a id="evcil" href="/">Evcil Dostlar</a>
+                    <ul class="detay">
+                        <li><a href="">Köpek</a></li>
+                        <li><a href="">Kedi</a></li>
+                        <li><a href="">Kuş</a></li>
+                    </ul>
+            </li>
+        </ul>
+        <ul class="menu_r">
+            
+
+            {% if request.user.is_authenticated %}
+                <li><a  href="/ilan/dashboard">İlanların</a></li>
+                <li><a href="/user/logout">Çıkış Yap</a></li>
+                <li style="color: white;">|</li>
+                <li><a id="navbar_bold" href="/">{{request.user.username}}</a></li>
+                <li id="menu_bar"><i data="./static/icons/menu_bar.svg"></i></li>
+            {% else %}
+                <li><a href="/user/login">Giriş Yap</a></li>
+                <li style="color: white;">|</li>
+                <li><a  href="/user/register">Kayıt Ol</a></li>
+                <li id="menu_bar"><i class="fa-solid fa-bars"></i></li>
+            {% endif %}
+        </ul>
+</div>

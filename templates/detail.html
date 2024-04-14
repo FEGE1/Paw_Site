@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1 style="margin-top:80px;">{{ilan.title}}</h1>
+<div>{{ilan.created_date}}</div>
+<figure><img class="img-fluid rounded" src="{{ilan.image.url}}" alt="..." /></figure>
+<p>{{ilan.content}}</p>
+
+{% endblock body %}

@@ -1,0 +1,14 @@
+
+{% extends "layout.html" %}
+
+{% block body %}
+<h3>Makale Oluştur</h3>
+<hr>
+<form enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <br>
+    <button type="submit">Yayınla</button>
+</form>
+    
+{% endblock body %}

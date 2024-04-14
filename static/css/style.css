@@ -1,0 +1,385 @@
+body{
+    background-image: url("/static/imgs/background_2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color:#484848;
+    font-weight:500;
+}
+
+hr{
+    width: 80%;
+}
+
+h3{
+    color: red;
+    margin-top: 300px;
+}
+/* navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0,0,0,.1);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+}
+
+.menu_l{
+    list-style: none;
+    display: block;
+    float: left;
+    left: 0;
+    padding-left: 0;
+    margin-left: 5px;
+}
+
+.menu_l li,.menu_r li{
+    display: inline;
+    margin: 10px;
+    position: relative;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.menu_l a,.menu_r a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    padding-bottom: 19px;
+    padding-top: 19px;
+}
+#navbar_bold{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.menu_r{
+    list-style: none;
+    display: block;
+    float: right;
+    left: 0;
+    padding-right: 0;
+    margin-right: 5px;
+}
+
+#left_menu{
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 200px;
+    height: 100%;
+    background-color: #853b6cb7;  
+}
+
+#left_menu ul{
+    list-style: none;
+    padding-left: 0;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial;    
+}
+
+#left_menu_div1{
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    width: 160px;
+    height: 200px;
+    background-color: #853b6cb7;
+    border-radius: 10px;
+}
+
+#left_menu_div2{
+    position: fixed;
+    left: 20px;
+    top: 300px;
+    width: 160px;
+    height: 200px;
+    background-color: #853b6cb7;
+    border-radius: 10px;
+}
+
+#menu_bar{
+    margin: 0;
+    padding: 0;
+}
+
+#menu_bar i{
+    display: none;
+}
+
+a:hover{
+    color: rgb(12, 112, 158);
+}
+
+.detay{
+    display: none;
+    margin-left: 171px;
+    margin-top: 15px;
+}
+
+.detay li{
+    display: block;
+    background-color: #a5d6df;
+    width: 150px;
+    margin: 0;
+    height: 40px;
+    transition: background-color 0.5s;
+}
+
+.detay a{
+    display: block;
+    text-align: center;
+    height: 20px;
+    line-height: 5px;
+}
+.detay a:hover{
+    color: rgb(255, 255, 255);
+}
+
+#evcil:hover ~ .detay,.detay:hover{
+    display: block;
+}
+
+.detay li:hover{
+    background-color: rgb(12, 112, 158);
+}
+
+/* body */
+.a{
+    max-width: 1745px;
+    margin: auto;
+}
+.main{
+    position: relative; 
+    display: flex;  
+    justify-content: space-between;
+    width: 20% 20%;
+    margin: 80px 17% 0 17%;
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+.left_filter{
+    height: 600px;
+    width: 250px;
+    float: left;
+}
+
+.showcase{
+    width: 100%;
+    margin-left: 20px; 
+}
+
+#showcase_title{
+    text-align: center;
+    font-size:32px;
+    color:whitesmoke;
+}
+
+.showcase_content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.ilan{
+    width:  200px;
+    height: 300px;
+    margin-left: 3%;
+    margin-top: 4%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.ilan_image{
+    height: 80%;
+    width: 87%;
+    margin: auto;
+}
+
+.ilan_image img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.ilan_text{
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+    text-align: center;
+    font-weight:600;
+    color: #484848;
+    text-decoration: none!important;
+}
+
+.ilan_text div{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    text-overflow:ellipsis; 
+    text-align: center;
+    font-weight:600;
+    color: #484848;
+    text-decoration: none!important;
+    margin: 0;
+}
+
+.ilan_date{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5% 0 5%;
+}
+
+.margin_auto{
+    margin: auto;
+}
+
+/* filter_start */
+
+#filter_form{
+    height: 100%;
+}
+
+.filter_row{
+    height: 15%;
+}
+
+.filter{
+    width: 80%;
+    height: 50%;
+    margin: 10% 10% 0 10%;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.158);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(245, 245, 245, 0.884);
+}
+#filter_btn{
+    margin: 0 10% 0 10%;
+    cursor: pointer;
+}
+/* filter_finish */
+
+/* form_elements */
+.form_capsule{
+    margin: 0 30% 0 30%;
+}
+
+input{
+    background-color: whitesmoke;
+}
+
+/* form_elements */
+@media only screen and (max-width: 1712px) {
+    .ilan{
+        width:  180px;
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width: 1569px) {
+    .ilan{
+        width:  170px;
+        height: 255px;
+    }
+}
+
+@media only screen and (max-width: 1497px) {
+    .ilan{
+        width:  160px;
+        height: 240px;
+    }
+}
+
+@media only screen and (max-width: 1425px) {
+    .ilan{
+        width:  140px;
+        height: 210px;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .a{
+        max-width: 1021px;
+    }
+}
+/*navbar_change*/
+@media only screen and (max-width: 640px) {
+    .menu_l li:not(:first-child){
+        display: none;
+    }
+    .menu_r li:not(:last-child){
+        display: none;
+    }
+    #menu_bar i{
+        margin-right: 20px;
+        color: whitesmoke;
+        display: inline-block;
+        font-size: 30px;
+    }
+    .main{
+        width: 10% 10%;
+        margin: 80px 8% 0 8%;
+    }
+    .ilan{
+        width:  120px;
+        height: 190px;
+    }
+}
+@media only screen and (max-width: 389px) {
+    .ilan{
+        width:  95px;
+        height: 165px;
+    }
+    .main{
+        width: 10% 10%;
+        margin: 80px 5% 0 5%;
+    }
+    .ilan_text p{
+        font-size: 10px!important;
+    }
+    .left_filter{
+        width: 180px;
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .ilan{
+        width:  95px;
+        height: 165px;
+    }
+    .main{
+        width: 10% 10%;
+        margin: 80px 5% 0 5%;
+    }
+    .ilan_text p{
+        font-size: 10px!important;
+    }
+    .left_filter{
+        width: 180px;
+    }
+}
+
+/* message_start */
+.message-info{
+    color: #fff;
+    background-color: #db3646;
+    border:1px solid transparent;
+    border-radius: 10px;
+    border-color: #db3848;
+    margin: auto;
+    padding: 5px 20px 5px 20px;
+    margin-top: 20px;
+}

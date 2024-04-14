@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h3>Kayıt Ol</h3>
+<hr>
+
+<form method = "post">
+    {% csrf_token %}
+    <div class="form_control">
+        <label for="#">Kullanıcı Adı:</label>
+        <input type="text" name="username">
+        <label for="#">Parola:</label>
+        <input type="text" name="password">
+        <label for="#">Parolayı Doğrula:</label>
+        <input type="text" name="confirm">
+    </div>
+    <button type="submit">Kayıt Ol</button>
+</form>
+{% endblock body %}
